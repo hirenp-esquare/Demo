@@ -33,11 +33,11 @@ jobs:
       - name: '' #get changed files
         id: getfile
         run: |
-          chmod +x .github/workflows/test.sh
+          chmod +x .github/workflows/changedFilesFilter.sh
           awk '{ sub("\r$", ""); print }' .github/workflows/changedFilesFilter.sh > .github/workflows/changedFilesFilter2.sh
           mv .github/workflows/changedFilesFilter2.sh .github/workflows/changedFilesFilter.sh
           chmod +x .github/workflows/changedFilesFilter.sh
-          echo "::set-output name=files::$(.github/workflows/test.sh "${{ steps.changedFiles.outputs.added_modified }}")"
+          echo "::set-output name=files::$(.github/workflows/changedFilesFilter.sh "${{ steps.changedFiles.outputs.added_modified }}")"
      
       - name: echo output
         run: |
