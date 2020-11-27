@@ -38,7 +38,7 @@ jobs:
         id: getfile
         run: |
           chmod +x .github/workflows/test.sh
-          echo "::set-output name=files::$(.github/workflows/test.sh "Patel")"
+          echo "::set-output name=files::$(.github/workflows/test.sh "testModelData/agg_v15_2019_06_14.mdl testModelData/cc_v36_2019_09_06.mdl testModelData/mm_v36_2019_09_06.txt")"
      
       - name: echo output
         run: |
