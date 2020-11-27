@@ -1,1 +1,1 @@
-echo hiren
+echo hiren $1
