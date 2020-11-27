@@ -1,2 +1,2 @@
 echo off
-echo Hello World from $AGENT_NAME.
+echo Hello World from
