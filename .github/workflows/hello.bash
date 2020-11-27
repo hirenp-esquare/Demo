@@ -1,8 +1,2 @@
- 
- for changed_file in $1; do
-	 if [[ ${changed_file} = **.mdl ]]; then
-              a+=" "${changed_file}
-     fi
-  done
- 
- echo $a
+echo off
+echo Hello World from $AGENT_NAME.
