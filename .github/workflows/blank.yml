@@ -29,7 +29,9 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: ls -l .github/workflows/test.sh
+        run: |
+          chmod +x .github/workflows/test.sh
+          .github/workflows/test.sh
         
       
       - name: '' #get changed files
