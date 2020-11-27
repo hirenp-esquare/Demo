@@ -1,4 +1,6 @@
-for i in 1 2 3 4 5
-do
-  echo "Looping ... number $i"
+for changed_file in $1; do
+  if [[ ${changed_file} = **.mdl ]]; then
+    a+=" "${changed_file}
+  fi
 done
+echo $a
