@@ -43,7 +43,7 @@ jobs:
      
       - name: echo output
         run: |
-         echo ${{ steps.getfile.outputs.files }}
+         echo ${{ steps.getfile.outputs.files/.mdl/-A.html }}
       
       #- name: Create issue using REST API
         #run: |
