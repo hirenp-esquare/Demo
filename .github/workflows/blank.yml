@@ -56,7 +56,7 @@ jobs:
         # Exclude files or directories
         #exclude: # optional
         # Command line parameters for fd command. "exclude" and "search_paths" parameters are ignored if this is set
-        fd_cmd_params: ". -0 --extension md --type f --hidden --no-ignore ${{ steps.getDirName.outputs.dirs }}" # optional
+        fd_cmd_params: ". -0 --extension md test --type f --hidden --no-ignore ${{ steps.getDirName.outputs.dirs }}" # optional
         # Set paths which should be recursively scanned for markdown files (*.md) and linted. By default all "*.md" files are checked
         #search_paths: ${{ steps.getDirName.outputs.dirs }} # optional
    
